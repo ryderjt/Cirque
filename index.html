@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cirque | Cinematic Video Essays</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="background.js"></script>
+</head>
+<body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <a href="#top" class="logo" aria-label="Cirque home">
+                <span>Cirque</span>
+            </a>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+            <ul class="nav__links" id="navMenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__content">
+                <p class="eyebrow">Video Essays &amp; Cinematography</p>
+                <h1>Cirque creates cinematic video essays exploring history, philosophy, art, and forgotten ideas — filmed and edited by Ryder Thomas, Rafa Cortes, and Sebastian Neisic.</h1>
+                <div class="hero__actions">
+                    <a class="button" href="#videos">Watch Latest</a>
+                    <a class="button button--ghost" href="https://www.youtube.com/@cirque7" target="_blank" rel="noopener">Visit Channel</a>
+                </div>
+            </div>
+            <div class="hero__ambient" role="presentation">
+                <div class="hero__gradient"></div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="videos">
+            <div class="section__header">
+                <h2>Recent Uploads</h2>
+                <p>Quiet meditations on history, philosophy, art, and the fragments of memory that linger between frames.</p>
+            </div>
+            <div class="video-grid">
+                <article class="video-card">
+                    <div class="video-card__embed">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=UUU0ffA9H9n1tFoZT3zh0Elw" title="Cirque YouTube uploads" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card__body">
+                        <h3>Latest Essays</h3>
+                        <p>Discover Cirque's newest reflections on the intersections of memory, landscape, and time.</p>
+                        <a class="inline-link" href="https://www.youtube.com/@cirque7/videos" target="_blank" rel="noopener">View all videos</a>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-card__image" aria-hidden="true"></div>
+                    <div class="video-card__body">
+                        <h3>Field Notes</h3>
+                        <p>Short vignettes captured on location — fragments of light and sound collected across continents.</p>
+                        <a class="inline-link" href="https://www.youtube.com/@cirque7" target="_blank" rel="noopener">Explore playlists</a>
+                    </div>
+                </article>
+                <article class="video-card">
+                    <div class="video-card__image video-card__image--alt" aria-hidden="true"></div>
+                    <div class="video-card__body">
+                        <h3>Director's Cuts</h3>
+                        <p>Extended edits and archival restorations — cinematic essays that linger in the afterglow.</p>
+                        <a class="inline-link" href="https://www.youtube.com/@cirque7/videos" target="_blank" rel="noopener">Watch now</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--split" id="about">
+            <div class="section__image" role="presentation"></div>
+            <div class="section__content">
+                <h2>About Cirque</h2>
+                <p>Cirque is a collective dedicated to storytelling through film — blending original cinematography with archival imagery to reflect on time, memory, and meaning.</p>
+                <a class="button button--ghost" href="about.html">Meet the collective</a>
+            </div>
+        </section>
+
+        <section class="section section--light" id="merch-preview">
+            <div class="section__header">
+                <h2>Artifacts &amp; Editions</h2>
+                <p>Limited posters, screen prints, and garments that extend Cirque's visual language beyond the frame.</p>
+            </div>
+            <div class="merch-preview">
+                <article class="merch-card">
+                    <div class="merch-card__image merch-card__image--poster" aria-hidden="true"></div>
+                    <div class="merch-card__body">
+                        <h3>Analog Echo Poster</h3>
+                        <p>A hand-numbered 18x24" print capturing the twilight textures of the "Echoes" essay.</p>
+                        <a class="inline-link" href="merch.html">View collection</a>
+                    </div>
+                </article>
+                <article class="merch-card">
+                    <div class="merch-card__image merch-card__image--shirt" aria-hidden="true"></div>
+                    <div class="merch-card__body">
+                        <h3>Fieldwork Tee</h3>
+                        <p>Organic cotton with archival stills printed in sage ink. Crafted for subtlety and comfort.</p>
+                        <a class="inline-link" href="merch.html">Shop now</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--contact" id="contact">
+            <div class="section__header">
+                <h2>Stay in the Loop</h2>
+                <p>Subscribe for release dates, screenings, and open studio events.</p>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/xyyljqqa" method="POST">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    <span>Message</span>
+                    <textarea name="message" rows="4" placeholder="What stories resonate with you?" required></textarea>
+                </label>
+                <button class="button" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__col">
+            <span class="logo">Cirque</span>
+            <p>&copy; <span id="year"></span> Cirque Collective. All rights reserved.</p>
+        </div>
+        <div class="footer__col">
+            <h3>Navigate</h3>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/@cirque7" target="_blank" rel="noopener">YouTube</a></li>
+                <li><a href="https://www.instagram.com/cirque.7/" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://cirque.works" target="_blank" rel="noopener">Website</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
